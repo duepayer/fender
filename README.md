@@ -2,8 +2,11 @@
 
 ## Requirements
 
+**Python v2.7**
+
 Python Modules
 
+* [Unittest](https://docs.python.org/2/library/unittest.html) (Standard Library)
 * [Selenium Webdriver](http://selenium-python.readthedocs.io/index.html)
 * [Nose Test Runner](http://nose.readthedocs.io/en/latest/) (not hard requirement but used to run script and output x-unit result in anticipation of CI integration)
 
@@ -26,14 +29,23 @@ Python Command Line Tools
 
 ## Running the script locally
 
-Running the test locally is simple. Again make sure that you're in the root **fender** directory and run the following command:
+There are two options for running the test script locally. First, make sure that you're in the root **fender** directory. Secondly you can run either of the following commands:
+
+Basic unittest command
 
 ```
-	nosetests -v -s
+	python test_fender_shop.py
+```
+
+Nose test runner with XML result output for CI integration
+
+```
+	nosetests -v -s --with-x-unit
 ```
 
 ## Refactoring checklist
 
-* Review entire site and create a UML document covering all of the different page and product types and their behaviors
-* Simplify/rethink locator retrieval functionality so that no extraneous locators remain from previous locator dictionary overriding when instantiating a new Page Object
-* Use more intelligent selenium wait strategy e.g. waiting until page elements are present on page rather than using `time.sleep` to allow more time for page to load
+* Review entire site and create a UML document covering all of the different page and product types and their behaviors.
+* Simplify/rethink locator retrieval functionality so that no extraneous locators remain from previous locator dictionary overriding when instantiating a new Page Object.
+* Clean up variable names so that page objects read more clearly in test scripts.
+* Use more intelligent selenium wait strategy (e.g. waiting until page elements are present on page rather than using `time.sleep` to allow more time for page to load).
