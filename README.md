@@ -15,7 +15,7 @@ Python Command Line Tools
 * [VirtualEnv](https://pypi.python.org/pypi/virtualenv)
 * [VirtualEnvWrapper](https://pypi.python.org/pypi/virtualenvwrapper)
 
-> Virtualenv is used to create a separate instance of Python to install script dependencies and to avoid clashing with the system Python on Mac OS X & Windows. There is also an excellent plugin available called virtualenvwrapper that provides addition command line tools to make creating, configuring and switching between virtualenvs much easier. These tools will help protect your system from misconfiguration and compatibility issues on your local machine as you work with various Python projects with different dependencies.
+> Virtualenv is used to create a separate instance of Python in order to install script dependencies and to avoid clashing with the system Python on Mac OS X & Windows. There is also an excellent plugin available called virtualenvwrapper that provides additional command line tools to make creating, configuring and switching between virtualenvs much easier. These tools will help protect your system from misconfiguration and compatibility issues on your local machine as you work with various Python projects that have different dependencies.
 
 
 ## Installation
